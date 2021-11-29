@@ -1,0 +1,25 @@
+<div>
+  <h1><b>Login</b></h1>
+
+  <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+    <label for="login"
+      >Login
+      <input
+        class="input is-primary"
+        id="login"
+        type="text"
+        formControlName="login"
+    /></label>
+
+    <label for="senha"
+      >Senha
+      <input
+        class="input is-primary"
+        id="senha"
+        type="password"
+        formControlName="senha"
+    /></label>
+
+    <button class="button" type="submit">Login</button>
+  </form>
+</div>
