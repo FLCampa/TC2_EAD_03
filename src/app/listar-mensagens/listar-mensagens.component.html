@@ -1,1 +1,10 @@
-<p>listar-mensagens works!</p>
+<div class="container">
+  <div class="content">
+    <ng-container *ngFor="let mensagem of listaMensagens">
+      <div class="textareaContainer">
+        <label for="textarea">Mensagem postada em {{ mensagem.date }}</label>
+        <textarea class="textarea" disabled>{{ mensagem.text }}</textarea>
+      </div>
+    </ng-container>
+  </div>
+</div>

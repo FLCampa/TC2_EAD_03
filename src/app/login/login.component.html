@@ -4,20 +4,12 @@
   <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
     <label for="login"
       >Login
-      <input
-        class="input is-primary"
-        id="login"
-        type="text"
-        formControlName="login"
+      <input class="input is-primary" type="text" formControlName="login"
     /></label>
 
     <label for="senha"
       >Senha
-      <input
-        class="input is-primary"
-        id="senha"
-        type="password"
-        formControlName="senha"
+      <input class="input is-primary" type="password" formControlName="senha"
     /></label>
 
     <button class="button" type="submit">Login</button>

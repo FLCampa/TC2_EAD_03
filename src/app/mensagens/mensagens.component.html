@@ -1,1 +1,24 @@
-<p>mensagens works!</p>
+<header>
+  <h1>Mensagem secreta!</h1>
+  <p>Por que os segredos devem ser só teus!</p>
+  <h4>
+    Seja bem vindo <b>{{ usuario }}</b>
+  </h4>
+  <button class="button" (click)="logout()">Logout</button>
+</header>
+
+<div class="content">
+  <div class="textareaContainer">
+    <form [formGroup]="formCadastroMensagem" (ngSubmit)="onSubmit()">
+      <label for="textarea">Digite uma mensagem para cadastrar:</label>
+      <textarea
+        class="textarea"
+        placeholder="Digite o texto desejado"
+        formControlName="text"
+      ></textarea>
+      <button class="button is-link">Cadastrar</button>
+    </form>
+  </div>
+
+  <app-listar-mensagens></app-listar-mensagens>
+</div>
